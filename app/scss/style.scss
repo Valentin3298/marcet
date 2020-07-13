@@ -2,6 +2,8 @@
 @import "global";
 @import "fonts";
 
+// ========================= start header ========================
+
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -13,7 +15,11 @@
   margin-right: 50px;
   span {
     margin-right: 5px;
+    color: $color-red;
   }
+}
+.header__phone {
+  color: $color-red;
 }
 .header__btn {
   padding: 10px 0px;
@@ -32,7 +38,7 @@
   }
 }
 .header__menu {
-  background-color: $color-bg;
+  background-color: $color-bg-grey;
 }
 .menu {
   display: flex;
@@ -44,7 +50,7 @@
     display: inline-block;
     a {
       color: #fff;
-      font-family: "Roboto-Medium";
+      font-family: "Roboto-Medium", sans-serif;
       font-weight: 500;
     }
     & + li {
@@ -52,6 +58,11 @@
     }
   }
 }
+
+// ========================= end header ==========================
+
+// ========================= start search ========================
+
 .search {
   background-repeat: no-repeat;
   background-size: cover;
@@ -63,15 +74,14 @@
     padding: 156px 0 175px;
     &-title {
       margin-bottom: 34px;
-      font-family: "Roboto-Bold", sans-serif;
       font-size: 48px;
-      font-weight: 700;
+      color: #fff;
     }
     &-text {
       margin-bottom: 54px;
       font-family: "Roboto-Medium", sans-serif;
-      font-size: 20px;
       font-weight: 500;
+      font-size: 20px;
     }
     &-form {
       position: relative;
@@ -86,8 +96,8 @@
         border-radius: 5px;
         //
         font-family: "Roboto-Medium", sans-serif;
-        font-size: 14px;
         font-weight: 500;
+        font-size: 14px;
         letter-spacing: 0.7px;
         &::placeholder {
           color: #90a4ae;
@@ -104,3 +114,76 @@
     }
   }
 }
+
+// ========================= end search ==========================
+
+// ========================= start products ======================
+
+.products {
+  padding: 121px 0 112px;
+  background-color: $color-bg-white;
+  &__title {
+    margin-bottom: 60px;
+  }
+  &__inner-btn {
+    margin-bottom: 59px;
+    text-align: center;
+    //
+    button {
+      font-family: "Roboto-Medium", sans-serif;
+      font-weight: 500;
+      color: $color-bg-grey;
+      font-size: 14px;
+      padding: 13px 20px;
+      background-color: #fff;
+      & + button {
+        margin-left: 5px;
+      }
+    }
+  }
+  &__item {
+    max-width: 442px;
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+    &-img {
+      display: block;
+      min-height: 250px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      min-height: 90px;
+    }
+    &-name {
+      max-width: 310px;
+    }
+    &-title {
+      display: block;
+      font-family: "Roboto-Medium", sans-serif;
+      font-weight: 500;
+      margin-bottom: 11px;
+      color: $color-bg-grey;
+      font-size: 18px;
+    }
+    &-category {
+      display: block;
+      font-family: "Roboto-Medium", sans-serif;
+      font-weight: 500;
+      color: $color-green;
+      font-size: 14px;
+    }
+    &-price {
+      font-family: "Roboto-Bold", sans-serif;
+
+      font-size: 20px;
+      color: $color-bg-grey;
+    }
+  }
+}
+
+// ========================= end products ========================
