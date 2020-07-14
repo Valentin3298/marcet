@@ -131,7 +131,7 @@
       & + button {
         margin-left: 5px;
       }
-      &.mixitup-control-active{
+      &.mixitup-control-active {
         background-color: $color-red;
         color: #fff;
       }
@@ -192,6 +192,7 @@
       padding: 10px 30px;
     }
     &-author {
+      max-width: 245px;
       font-size: 14px;
       color: $color-text;
       .avatar {
@@ -206,6 +207,14 @@
         border-radius: 50%;
       }
     }
+    &-star {
+      display: flex;
+      font-size: 12px;
+      span {
+        vertical-align: middle;
+        color: $color-bg-grey;
+      }
+    }
   }
   &__bottom-btn {
     text-align: center;
@@ -218,7 +227,7 @@
       &:last-child {
         margin-right: 0;
       }
-      &.mixitup-control-active{
+      &.mixitup-control-active {
         background-color: $color-red;
         color: #fff;
       }
@@ -227,3 +236,11 @@
 }
 
 // ========================= end products ========================
+
+// ========================= start product-slider ========================
+
+.product-slider {
+  padding: 120px 0;
+}
+
+// ========================= end product-slider ========================
