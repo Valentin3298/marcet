@@ -9,4 +9,13 @@ $(function () {
     readOnly: true
   });
 
+  $(".product-slider__inner").slick({
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: true
+  })
+
 });

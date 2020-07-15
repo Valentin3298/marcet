@@ -241,6 +241,33 @@
 
 .product-slider {
   padding: 120px 0;
+  &-title {
+    margin-bottom: 55px;
+  }
+  .draggable {
+    margin-bottom: 37px;
+  }
+  .slick-dots {
+    text-align: center;
+    li {
+      display: inline-block;
+      & + li {
+        margin-left: 7px;
+      }
+      &.slick-active {
+        button {
+          background-color: $color-green;
+        }
+      }
+      button {
+        font-size: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $color-dots;
+      }
+    }
+  }
 }
 
 // ========================= end product-slider ========================
