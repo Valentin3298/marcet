@@ -293,14 +293,14 @@
     &:hover {
       .advantages__item-img {
         background-color: $color-green;
-        transition: all .3s;
+        transition: all 0.3s;
       }
       svg {
         fill: #fff;
-        transition: all .3s;
+        transition: all 0.3s;
       }
       .advantages__item-title {
-        transition: all .3s;
+        transition: all 0.3s;
         color: $color-green;
       }
     }
@@ -322,7 +322,7 @@
       color: #ffffff;
       font-size: 24px;
     }
-   
+
     &-text {
       color: $color-advantages-text;
       font-family: "Roboto-Regular", sans-serif;
@@ -334,3 +334,47 @@
 }
 
 // ========================= end advantages ========================
+
+// ========================= start author ========================
+.author {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 761px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 60px;
+    background-color: $color-green;
+  }
+  &__title {
+    max-width: 260px;
+    margin-right: 50px;
+    color: #ffffff;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    span {
+      font-family: "Roboto - Bold", sans-serif;
+      font-weight: 700;
+    }
+  }
+  &__link {
+    padding: 25px 43px;
+    background-color: #fff;
+    color: $color-bg-grey;
+    font-family: "Roboto-Medium", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    &:hover{
+      background-color: $color-red;
+      color: #fff;
+    }
+  }
+}
+// ========================= end author ========================
