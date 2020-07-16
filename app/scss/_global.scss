@@ -64,6 +64,7 @@ a:hover {
 }
 ul li {
   list-style: none;
+  
 }
 img {
   vertical-align: top;
@@ -90,7 +91,7 @@ body {
   color: $color-text;
 }
 .container {
-  max-width: 1120px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -111,7 +112,7 @@ body {
   color: $color-bg-grey;
   font-size: 36px;
 }
-.rate-star{
+.rate-star {
   display: inline-block;
   margin-right: 8px;
 }

@@ -2,7 +2,7 @@
 @import "global";
 @import "fonts";
 
-// ========================= start header ========================
+// ========================= start header ===========================================================================
 
 .header__top-inner {
   display: flex;
@@ -57,9 +57,9 @@
   }
 }
 
-// ========================= end header ==========================
+// ========================= end header ===========================================================================
 
-// ========================= start search ========================
+// ========================= start search ==========================================================================
 
 .search {
   background-repeat: no-repeat;
@@ -109,9 +109,9 @@
   }
 }
 
-// ========================= end search ==========================
+// ========================= end search ==================================================================================
 
-// ========================= start products ======================
+// ========================= start products ==============================================================================
 
 .products {
   padding: 121px 0 112px;
@@ -235,9 +235,9 @@
   }
 }
 
-// ========================= end products ========================
+// ========================= end products ==========================================================================
 
-// ========================= start product-slider ========================
+// ========================= start product-slider ===================================================================
 
 .product-slider {
   padding: 120px 0;
@@ -270,9 +270,9 @@
   }
 }
 
-// ========================= end product-slider ========================
+// ========================= end product-slider ================================================================
 
-// ========================= start advantages ========================
+// ========================= start advantages ===================================================================
 .advantages {
   background-color: $color-bg-grey;
   &__title {
@@ -333,9 +333,9 @@
   }
 }
 
-// ========================= end advantages ========================
+// ========================= end advantages ==============================================================================
 
-// ========================= start author ========================
+// ========================= start author =================================================================================
 .author {
   background-position: center;
   background-repeat: no-repeat;
@@ -346,9 +346,9 @@
   align-items: center;
   &__box {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 70px 60px;
+    padding: 20px 60px;
+    min-height: 216px;
     background-color: $color-green;
   }
   &__title {
@@ -368,13 +368,138 @@
     padding: 25px 43px;
     background-color: #fff;
     color: $color-bg-grey;
-    font-family: "Roboto-Medium", sans-serif;
+    font-family: "Roboto-Regular", sans-serif;
     font-weight: 400;
     font-size: 18px;
-    &:hover{
+    &:hover {
       background-color: $color-red;
       color: #fff;
     }
   }
 }
-// ========================= end author ========================
+// ========================= end author =============================================================================
+
+// ========================= start tutorial ==========================================================================
+.tutorial {
+  &__inner {
+    padding: 66px 0 121px;
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+      &__item {
+        max-width: 370px;
+        width: 100%;
+        &-img {
+          min-height: 270px;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &-title {
+          font-family: "Roboto-Bold", sans-serif;
+          font-size: 24px;
+          font-weight: 700;
+          background-color: $color-bg-tutorial;
+          padding: 30px 10px;
+          color: $color-bg-grey;
+          text-align: center;
+        }
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 57px;
+  }
+}
+
+// ========================= end tutorial ==================================================================================
+
+// ========================= start footer ===================================================================================
+.footer {
+  background-color: $color-bg-grey;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 116px 0 100px;
+  }
+}
+.footer__copy {
+  border-top: 1px solid #424d53;
+}
+.footer__copy-text {
+  padding-top: 27px;
+  min-height: 73px;
+  text-align: center;
+  color: $color-footer-text;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+.footer__col {
+  max-width: 270px;
+  &-menu {
+    max-width: 220px;
+  }
+  &-title {
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 50px;
+      height: 3px;
+      background-color: $color-green;
+    }
+  }
+  &-text {
+    color: $color-footer-descr;
+    font-family: "Roboto-Regular";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 36px;
+  }
+  &-list {
+    li {
+      margin-bottom: 30px;
+    }
+    a {
+      color: #b7c3c8;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+}
+.footer__info {
+  position: relative;
+  color: #fff;
+  margin-top: 27px;
+  padding-left: 30px;
+  &::before {
+    content: "\f041";
+    font-family: "icomoon";
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    color: $color-green;
+  }
+  &-tel {
+    &::before {
+      content: "\f095";
+      font-family: "icomoon";
+      position: absolute;
+      left: 0;
+      font-size: 18px;
+      color: $color-green;
+    }
+  }
+}
+
+// ========================= end footer ====================================================================================
