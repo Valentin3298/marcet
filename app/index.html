@@ -10,88 +10,314 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__top">
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="header__top-inner">
+                            <div class="header__logo">
+                                <a href="#">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                            <div class="header__text">
+                                <a href="#">
+                                    <span>
+                                        Need help?
+                                    </span>
+                                </a>Talk to an expert:
+                                <a class="header__phone" href="tel:61383766284">
+                                    +61 3 8376 6284
+                                </a>
+                            </div>
+                            <div class="header__box">
+                                <a class="basket" href="#"></a>
+                                <a class="header__btn header__btn-login" href="">Login</a>
+                                <a class="header__btn header__btn-register" href="">Register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="container">
+                        <nav class="menu">
+                            <ul class="menu__list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">WordPress</a></li>
+                                <li><a href="#">Joomla</a></li>
+                                <li><a href="#">PSD</a></li>
+                                <li><a href="#">Plugins</a></li>
+                                <li><a href="#">Components</a></li>
+                                <li><a href="#">Pages</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <section class="search" style="background-image: url(../img/bg_green.jpg);">
             <div class="container">
-                <div class="header__top-inner">
-                    <div class="header__logo">
-                        <a href="#">
-                            <img src="img/logo.png" alt="">
-                        </a>
+                <div class="search__inner">
+                    <div class="search__inner-title title">
+                        Welcome To Foxtar Market Place!
                     </div>
-                    <div class="header__text">
-                        <a href="#">
-                            <span>
-                                Need help?
-                            </span>
-                        </a>Talk to an expert:
-                        <a class="header__phone" href="tel:61383766284">
-                            +61 3 8376 6284
-                        </a>
+                    <div class="search__inner-text">
+                        Premium WordPress Themes, Web Templates and Many More ...
                     </div>
-                    <div class="header__box">
-                        <a class="basket" href="#"></a>
-                        <a class="header__btn header__btn-login" href="">Login</a>
-                        <a class="header__btn header__btn-register" href="">Register</a>
+                    <div class="search__inner-form">
+                        <form>
+                            <input type="text" placeholder="Search Your Keywords . . ." required>
+                            <button type="submit">
+                                <img src="img/icons/search.png" alt="">
+                            </button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="header__menu">
-            <div class="container">
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">WordPress</a></li>
-                        <li><a href="#">Joomla</a></li>
-                        <li><a href="#">PSD</a></li>
-                        <li><a href="#">Plugins</a></li>
-                        <li><a href="#">Components</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </nav>
+        </section>
+        <section class="products">
+            <div class="container-fluid">
+                <div class="products__title title">
+                    Let’s Check Out Our Newest Release Prodcuts
+                </div>
+                <div class="products__inner">
+                    <div class="products__inner-btn">
+                        <button type="button" data-filter="all">All</button>
+                        <button type="button" data-filter=".category-wordpress">WordPress</button>
+                        <button type="button" data-filter=".category-joomla">Joomla</button>
+                        <button type="button" data-filter=".category-plugins">Plugins</button>
+                        <button type="button" data-filter=".category-component">Component</button>
+                        <button type="button" data-filter=".category-psd">PSD</button>
+                    </div>
+                    <div class="products__inner-box">
+                        <div class="products__item mix category-plugins">
+                            <a class="products__item-img" href="#"
+                                style="background-image: url(img/content/1.jpg);"></a>
+                            <div class="products__item-content">
+                                <div class="products__item-name">
+                                    <a class="products__item-title" href="#">
+                                        Responsive Mobile APP
+                                    </a>
+                                    <a class="products__item-category" href="#">
+                                        Site Template
+                                    </a>
+                                </div>
+                                <div class="products__item-price">
+                                    $19
+                                </div>
+                            </div>
+                            <div class="products__item-info">
+                                <a class="products__item-author" href="#">
+                                    <span class="avatar" style="background-image: url(img/content/user.png);"></span>
+                                    Radiustheme
+                                </a>
+                                <div class="products__item-star">
+                                    <div class="rate-star"></div>(<span>05</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item mix category-wordpress">
+                            <a class="products__item-img" href="#"
+                                style="background-image: url(img/content/2.jpg);"></a>
+                            <div class="products__item-content">
+                                <div class="products__item-name">
+                                    <a class="products__item-title" href="#">
+                                        The Post Grid Pro
+                                    </a>
+                                    <a class="products__item-category" href="#">
+                                        WordPress Plugin
+                                    </a>
+                                </div>
+                                <div class="products__item-price">
+                                    $15
+                                </div>
+                            </div>
+                            <div class="products__item-info">
+                                <a class="products__item-author" href="#">
+                                    <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                    PsdBosS
+                                </a>
+                                <div class="products__item-star">
+                                    <div class="rate-star"></div>(<span>05</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item mix category-wordpress">
+                            <a class="products__item-img" href="#"
+                                style="background-image: url(img/content/3.jpg);"></a>
+                            <div class="products__item-content">
+                                <div class="products__item-name">
+                                    <a class="products__item-title" href="#">
+                                        Food Menu
+                                    </a>
+                                    <a class="products__item-category" href="#">
+                                        WordPress Plugin
+                                    </a>
+                                </div>
+                                <div class="products__item-price">
+                                    $20
+                                </div>
+                            </div>
+                            <div class="products__item-info">
+                                <a class="products__item-author" href="#">
+                                    <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                    Manilip
+                                </a>
+                                <div class="products__item-star">
+                                    <div class="rate-star"></div>(<span>05</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item mix category-psd category-new">
+                            <a class="products__item-img" href="#"
+                                style="background-image: url(img/content/4.jpg);"></a>
+                            <div class="products__item-content">
+                                <div class="products__item-name">
+                                    <a class="products__item-title" href="#">
+                                        Imac Mockup
+                                    </a>
+                                    <a class="products__item-category" href="#">
+                                        Psd Template
+                                    </a>
+                                </div>
+                                <div class="products__item-price">
+                                    $12
+                                </div>
+                            </div>
+                            <div class="products__item-info">
+                                <a class="products__item-author" href="#">
+                                    <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                    Lolypop
+                                </a>
+                                <div class="products__item-star">
+                                    <div class="rate-star"></div>(<span>05</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item mix category-joomla category-new">
+                            <a class="products__item-img" href="#"
+                                style="background-image: url(img/content/5.jpg);"></a>
+                            <div class="products__item-content">
+                                <div class="products__item-name">
+                                    <a class="products__item-title" href="#">
+                                        Gymedge
+                                    </a>
+                                    <a class="products__item-category" href="#">
+                                        Joomla Template
+                                    </a>
+                                </div>
+                                <div class="products__item-price">
+                                    $45
+                                </div>
+                            </div>
+                            <div class="products__item-info">
+                                <a class="products__item-author" href="#">
+                                    <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                    Micrsof
+                                </a>
+                                <div class="products__item-star">
+                                    <div class="rate-star"></div>(<span>05</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item mix category-wordpress">
+                            <a class="products__item-img" href="#"
+                                style="background-image: url(img/content/6.jpg);"></a>
+                            <div class="products__item-content">
+                                <div class="products__item-name">
+                                    <a class="products__item-title" href="#">
+                                        The Post Grid Pro
+                                    </a>
+                                    <a class="products__item-category" href="#">
+                                        WordPress Plugin
+                                    </a>
+                                </div>
+                                <div class="products__item-price">
+                                    $19
+                                </div>
+                            </div>
+                            <div class="products__item-info">
+                                <a class="products__item-author" href="#">
+                                    <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                    Raklouse
+                                </a>
+                                <div class="products__item-star">
+                                    <div class="rate-star"></div>(<span>05</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item mix category-component category-popular">
+                            <a class="products__item-img" href="#"
+                                style="background-image: url(img/content/7.jpg);"></a>
+                            <div class="products__item-content">
+                                <div class="products__item-name">
+                                    <a class="products__item-title" href="#">
+                                        Doll Face
+                                    </a>
+                                    <a class="products__item-category" href="#">
+                                        Illsatration
+                                    </a>
+                                </div>
+                                <div class="products__item-price">
+                                    $10
+                                </div>
+                            </div>
+                            <div class="products__item-info">
+                                <a class="products__item-author" href="#">
+                                    <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                    Mikc Art
+                                </a>
+                                <div class="products__item-star">
+                                    <div class="rate-star"></div>(<span>05</span>)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__item mix category-psd category-popular">
+                            <a class="products__item-img" href="#"
+                                style="background-image: url(img/content/8.jpg);"></a>
+                            <div class="products__item-content">
+                                <div class="products__item-name">
+                                    <a class="products__item-title" href="#">
+                                        Designer Mockup
+                                    </a>
+                                    <a class="products__item-category" href="#">
+                                        PsdTemplate
+                                    </a>
+                                </div>
+                                <div class="products__item-price">
+                                    $10
+                                </div>
+                            </div>
+                            <div class="products__item-info">
+                                <a class="products__item-author" href="#">
+                                    <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                    ThemeLol
+                                </a>
+                                <div class="products__item-star">
+                                    <div class="rate-star"></div>(<span>05</span>)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__bottom-btn">
+                    <button type="button" data-filter=".category-new">All New Items</button>
+                    <button type="button" data-filter=".category-popular">Popular Items</button>
+                </div>
             </div>
-        </div>
-    </header>
-    <section class="search" style="background-image: url(../img/bg_green.jpg);">
-        <div class="container">
-            <div class="search__inner">
-                <div class="search__inner-title title">
-                    Welcome To Foxtar Market Place!
+        </section>
+        <section class="product-slider">
+            <div class="container-fluid">
+                <div class="product-slider-title title">
+                    This Week Trending Products
                 </div>
-                <div class="search__inner-text">
-                    Premium WordPress Themes, Web Templates and Many More ...
-                </div>
-                <div class="search__inner-form">
-                    <form>
-                        <input type="text" placeholder="Search Your Keywords . . ." required>
-                        <button type="submit">
-                            <img src="img/icons/search.png" alt="">
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="products">
-        <div class="container-fluid">
-            <div class="products__title title">
-                Let’s Check Out Our Newest Release Prodcuts
-            </div>
-            <div class="products__inner">
-                <div class="products__inner-btn">
-                    <button type="button" data-filter="all">All</button>
-                    <button type="button" data-filter=".category-wordpress">WordPress</button>
-                    <button type="button" data-filter=".category-joomla">Joomla</button>
-                    <button type="button" data-filter=".category-plugins">Plugins</button>
-                    <button type="button" data-filter=".category-component">Component</button>
-                    <button type="button" data-filter=".category-psd">PSD</button>
-                </div>
-                <div class="products__inner-box">
-                    <div class="products__item mix category-plugins">
+                <div class="product-slider__inner">
+                    <div class="products__item">
                         <a class="products__item-img" href="#" style="background-image: url(img/content/1.jpg);"></a>
                         <div class="products__item-content">
                             <div class="products__item-name">
@@ -116,7 +342,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item mix category-wordpress">
+                    <div class="products__item">
                         <a class="products__item-img" href="#" style="background-image: url(img/content/2.jpg);"></a>
                         <div class="products__item-content">
                             <div class="products__item-name">
@@ -141,7 +367,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item mix category-wordpress">
+                    <div class="products__item">
                         <a class="products__item-img" href="#" style="background-image: url(img/content/3.jpg);"></a>
                         <div class="products__item-content">
                             <div class="products__item-name">
@@ -166,7 +392,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item mix category-psd category-new">
+                    <div class="products__item">
                         <a class="products__item-img" href="#" style="background-image: url(img/content/4.jpg);"></a>
                         <div class="products__item-content">
                             <div class="products__item-name">
@@ -191,7 +417,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item mix category-joomla category-new">
+                    <div class="products__item">
                         <a class="products__item-img" href="#" style="background-image: url(img/content/5.jpg);"></a>
                         <div class="products__item-content">
                             <div class="products__item-name">
@@ -216,7 +442,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item mix category-wordpress">
+                    <div class="products__item">
                         <a class="products__item-img" href="#" style="background-image: url(img/content/6.jpg);"></a>
                         <div class="products__item-content">
                             <div class="products__item-name">
@@ -241,7 +467,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item mix category-component category-popular">
+                    <div class="products__item">
                         <a class="products__item-img" href="#" style="background-image: url(img/content/7.jpg);"></a>
                         <div class="products__item-content">
                             <div class="products__item-name">
@@ -266,7 +492,207 @@
                             </div>
                         </div>
                     </div>
-                    <div class="products__item mix category-psd category-popular">
+                    <div class="products__item">
+                        <a class="products__item-img" href="#" style="background-image: url(img/content/8.jpg);"></a>
+                        <div class="products__item-content">
+                            <div class="products__item-name">
+                                <a class="products__item-title" href="#">
+                                    Designer Mockup
+                                </a>
+                                <a class="products__item-category" href="#">
+                                    PsdTemplate
+                                </a>
+                            </div>
+                            <div class="products__item-price">
+                                $10
+                            </div>
+                        </div>
+                        <div class="products__item-info">
+                            <a class="products__item-author" href="#">
+                                <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                ThemeLol
+                            </a>
+                            <div class="products__item-star">
+                                <div class="rate-star"></div>(<span>05</span>)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a class="products__item-img" href="#" style="background-image: url(img/content/1.jpg);"></a>
+                        <div class="products__item-content">
+                            <div class="products__item-name">
+                                <a class="products__item-title" href="#">
+                                    Responsive Mobile APP
+                                </a>
+                                <a class="products__item-category" href="#">
+                                    Site Template
+                                </a>
+                            </div>
+                            <div class="products__item-price">
+                                $19
+                            </div>
+                        </div>
+                        <div class="products__item-info">
+                            <a class="products__item-author" href="#">
+                                <span class="avatar" style="background-image: url(img/content/user.png);"></span>
+                                Radiustheme
+                            </a>
+                            <div class="products__item-star">
+                                <div class="rate-star"></div>(<span>05</span>)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a class="products__item-img" href="#" style="background-image: url(img/content/2.jpg);"></a>
+                        <div class="products__item-content">
+                            <div class="products__item-name">
+                                <a class="products__item-title" href="#">
+                                    The Post Grid Pro
+                                </a>
+                                <a class="products__item-category" href="#">
+                                    WordPress Plugin
+                                </a>
+                            </div>
+                            <div class="products__item-price">
+                                $15
+                            </div>
+                        </div>
+                        <div class="products__item-info">
+                            <a class="products__item-author" href="#">
+                                <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                PsdBosS
+                            </a>
+                            <div class="products__item-star">
+                                <div class="rate-star"></div>(<span>05</span>)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a class="products__item-img" href="#" style="background-image: url(img/content/3.jpg);"></a>
+                        <div class="products__item-content">
+                            <div class="products__item-name">
+                                <a class="products__item-title" href="#">
+                                    Food Menu
+                                </a>
+                                <a class="products__item-category" href="#">
+                                    WordPress Plugin
+                                </a>
+                            </div>
+                            <div class="products__item-price">
+                                $20
+                            </div>
+                        </div>
+                        <div class="products__item-info">
+                            <a class="products__item-author" href="#">
+                                <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                Manilip
+                            </a>
+                            <div class="products__item-star">
+                                <div class="rate-star"></div>(<span>05</span>)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a class="products__item-img" href="#" style="background-image: url(img/content/4.jpg);"></a>
+                        <div class="products__item-content">
+                            <div class="products__item-name">
+                                <a class="products__item-title" href="#">
+                                    Imac Mockup
+                                </a>
+                                <a class="products__item-category" href="#">
+                                    Psd Template
+                                </a>
+                            </div>
+                            <div class="products__item-price">
+                                $12
+                            </div>
+                        </div>
+                        <div class="products__item-info">
+                            <a class="products__item-author" href="#">
+                                <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                Lolypop
+                            </a>
+                            <div class="products__item-star">
+                                <div class="rate-star"></div>(<span>05</span>)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a class="products__item-img" href="#" style="background-image: url(img/content/5.jpg);"></a>
+                        <div class="products__item-content">
+                            <div class="products__item-name">
+                                <a class="products__item-title" href="#">
+                                    Gymedge
+                                </a>
+                                <a class="products__item-category" href="#">
+                                    Joomla Template
+                                </a>
+                            </div>
+                            <div class="products__item-price">
+                                $45
+                            </div>
+                        </div>
+                        <div class="products__item-info">
+                            <a class="products__item-author" href="#">
+                                <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                Micrsof
+                            </a>
+                            <div class="products__item-star">
+                                <div class="rate-star"></div>(<span>05</span>)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a class="products__item-img" href="#" style="background-image: url(img/content/6.jpg);"></a>
+                        <div class="products__item-content">
+                            <div class="products__item-name">
+                                <a class="products__item-title" href="#">
+                                    The Post Grid Pro
+                                </a>
+                                <a class="products__item-category" href="#">
+                                    WordPress Plugin
+                                </a>
+                            </div>
+                            <div class="products__item-price">
+                                $19
+                            </div>
+                        </div>
+                        <div class="products__item-info">
+                            <a class="products__item-author" href="#">
+                                <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                Raklouse
+                            </a>
+                            <div class="products__item-star">
+                                <div class="rate-star"></div>(<span>05</span>)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
+                        <a class="products__item-img" href="#" style="background-image: url(img/content/7.jpg);"></a>
+                        <div class="products__item-content">
+                            <div class="products__item-name">
+                                <a class="products__item-title" href="#">
+                                    Doll Face
+                                </a>
+                                <a class="products__item-category" href="#">
+                                    Illsatration
+                                </a>
+                            </div>
+                            <div class="products__item-price">
+                                $10
+                            </div>
+                        </div>
+                        <div class="products__item-info">
+                            <a class="products__item-author" href="#">
+                                <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
+                                Mikc Art
+                            </a>
+                            <div class="products__item-star">
+                                <div class="rate-star"></div>(<span>05</span>)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products__item">
                         <a class="products__item-img" href="#" style="background-image: url(img/content/8.jpg);"></a>
                         <div class="products__item-content">
                             <div class="products__item-name">
@@ -293,455 +719,42 @@
                     </div>
                 </div>
             </div>
-            <div class="products__bottom-btn">
-                <button type="button" data-filter=".category-new">All New Items</button>
-                <button type="button" data-filter=".category-popular">Popular Items</button>
-            </div>
-        </div>
-    </section>
-    <section class="product-slider">
-        <div class="container-fluid">
-            <div class="product-slider-title title">
-                This Week Trending Products
-            </div>
-            <div class="product-slider__inner">
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/1.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Responsive Mobile APP
-                            </a>
-                            <a class="products__item-category" href="#">
-                                Site Template
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $19
-                        </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages__inner">
+                    <div class="advantages__title title">
+                        Why You Choose Foxtar Market Place?
                     </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user.png);"></span>
-                            Radiustheme
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
+                    <div class="advantages__items">
+                        <div class="advantages__item">
+                            <div class="advantages__item-img">
+                                <svg xml:space="preserve" viewBox="0 0 71 100" version="1.1" y="0px" x="0px">
+                                    <path
+                                        d="m65.5 45v-15c0-16.542-13.458-30-30-30s-30 13.458-30 30v15h-5.5v55h71v-55h-5.5zm-52-15c0-12.131 9.869-22 22-22s22 9.869 22 22v15h-44v-15z" />
+                                </svg>
+                            </div>
+                            <div class="advantages__item-title">
+                                Easily Buy & Sell
+                            </div>
+                            <div class="advantages__item-text">
+                                Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has
+                                been
+                                the industry's standaum.
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/2.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                The Post Grid Pro
-                            </a>
-                            <a class="products__item-category" href="#">
-                                WordPress Plugin
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $15
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            PsdBosS
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/3.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Food Menu
-                            </a>
-                            <a class="products__item-category" href="#">
-                                WordPress Plugin
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $20
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            Manilip
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/4.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Imac Mockup
-                            </a>
-                            <a class="products__item-category" href="#">
-                                Psd Template
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $12
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            Lolypop
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/5.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Gymedge
-                            </a>
-                            <a class="products__item-category" href="#">
-                                Joomla Template
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $45
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            Micrsof
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/6.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                The Post Grid Pro
-                            </a>
-                            <a class="products__item-category" href="#">
-                                WordPress Plugin
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $19
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            Raklouse
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/7.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Doll Face
-                            </a>
-                            <a class="products__item-category" href="#">
-                                Illsatration
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $10
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            Mikc Art
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/8.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Designer Mockup
-                            </a>
-                            <a class="products__item-category" href="#">
-                                PsdTemplate
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $10
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            ThemeLol
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/1.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Responsive Mobile APP
-                            </a>
-                            <a class="products__item-category" href="#">
-                                Site Template
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $19
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user.png);"></span>
-                            Radiustheme
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/2.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                The Post Grid Pro
-                            </a>
-                            <a class="products__item-category" href="#">
-                                WordPress Plugin
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $15
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            PsdBosS
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/3.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Food Menu
-                            </a>
-                            <a class="products__item-category" href="#">
-                                WordPress Plugin
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $20
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            Manilip
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/4.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Imac Mockup
-                            </a>
-                            <a class="products__item-category" href="#">
-                                Psd Template
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $12
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            Lolypop
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/5.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Gymedge
-                            </a>
-                            <a class="products__item-category" href="#">
-                                Joomla Template
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $45
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            Micrsof
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/6.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                The Post Grid Pro
-                            </a>
-                            <a class="products__item-category" href="#">
-                                WordPress Plugin
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $19
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            Raklouse
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/7.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Doll Face
-                            </a>
-                            <a class="products__item-category" href="#">
-                                Illsatration
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $10
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            Mikc Art
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-                <div class="products__item">
-                    <a class="products__item-img" href="#" style="background-image: url(img/content/8.jpg);"></a>
-                    <div class="products__item-content">
-                        <div class="products__item-name">
-                            <a class="products__item-title" href="#">
-                                Designer Mockup
-                            </a>
-                            <a class="products__item-category" href="#">
-                                PsdTemplate
-                            </a>
-                        </div>
-                        <div class="products__item-price">
-                            $10
-                        </div>
-                    </div>
-                    <div class="products__item-info">
-                        <a class="products__item-author" href="#">
-                            <span class="avatar" style="background-image: url(img/content/user2.png);"></span>
-                            ThemeLol
-                        </a>
-                        <div class="products__item-star">
-                            <div class="rate-star"></div>(<span>05</span>)
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="advantages">
-        <div class="container">
-            <div class="advantages__inner">
-                <div class="advantages__title title">
-                    Why You Choose Foxtar Market Place?
-                </div>
-                <div class="advantages__items">
-                    <div class="advantages__item">
-                        <div class="advantages__item-img">
-                            <svg xml:space="preserve" viewBox="0 0 71 100" version="1.1" y="0px" x="0px">
-                                <path
-                                    d="m65.5 45v-15c0-16.542-13.458-30-30-30s-30 13.458-30 30v15h-5.5v55h71v-55h-5.5zm-52-15c0-12.131 9.869-22 22-22s22 9.869 22 22v15h-44v-15z" />
-                            </svg>
-                        </div>
-                        <div class="advantages__item-title">
-                            Easily Buy & Sell
-                        </div>
-                        <div class="advantages__item-text">
-                            Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been
-                            the industry's standaum.
-                        </div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__item-img">
-                            <svg x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
-                                xml:space="preserve">
-                                <g>
+                        <div class="advantages__item">
+                            <div class="advantages__item-img">
+                                <svg x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                                    xml:space="preserve">
                                     <g>
-                                        <path d="M32,271.692v192c0,17.664,14.368,32,32,32h160v-224H32z" />
+                                        <g>
+                                            <path d="M32,271.692v192c0,17.664,14.368,32,32,32h160v-224H32z" />
+                                        </g>
                                     </g>
-                                </g>
-                                <g>
                                     <g>
-                                        <path d="M480,143.692H378.752c7.264-4.96,13.504-9.888,17.856-14.304c25.824-25.952,25.824-68.192,0-94.144
+                                        <g>
+                                            <path d="M480,143.692H378.752c7.264-4.96,13.504-9.888,17.856-14.304c25.824-25.952,25.824-68.192,0-94.144
 			c-25.088-25.28-68.8-25.216-93.856,0c-13.888,13.92-50.688,70.592-45.6,108.448h-2.304c5.056-37.856-31.744-94.528-45.6-108.448
 			c-25.088-25.216-68.8-25.216-93.856,0C89.6,61.196,89.6,103.436,115.36,129.388c4.384,4.416,10.624,9.344,17.888,14.304H32
 			c-17.632,0-32,14.368-32,32v48c0,8.832,7.168,16,16,16h208v-64h64v64h208c8.832,0,16-7.168,16-16v-48
@@ -750,166 +763,169 @@
 			C208.128,79.5,229.568,134.924,222.112,142.636z M295.776,143.692c-4.544,0-5.888-1.024-5.888-1.056
 			c-7.456-7.712,13.984-63.136,35.552-84.832c12.896-13.024,35.456-13.088,48.48,0c13.44,13.504,13.44,35.52,0,49.024
 			C360.128,120.716,317.92,143.692,295.776,143.692z" />
+                                        </g>
                                     </g>
-                                </g>
-                                <g>
                                     <g>
-                                        <path d="M288,271.692v224h160c17.664,0,32-14.336,32-32v-192H288z" />
+                                        <g>
+                                            <path d="M288,271.692v224h160c17.664,0,32-14.336,32-32v-192H288z" />
+                                        </g>
                                     </g>
-                                </g>
-                            </svg>
+                                </svg>
+                            </div>
+                            <div class="advantages__item-title">
+                                Quality Products
+                            </div>
+                            <div class="advantages__item-text">
+                                Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has
+                                been
+                                the industry's standaum.
+                            </div>
                         </div>
-                        <div class="advantages__item-title">
-                            Quality Products
-                        </div>
-                        <div class="advantages__item-text">
-                            Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been
-                            the industry's standaum.
-                        </div>
-                    </div>
-                    <div class="advantages__item">
-                        <div class="advantages__item-img">
-                            <svg viewBox="0 0 412.735 412.735" style="enable-background:new 0 0 412.735 412.735;"
-                                xml:space="preserve">
-                                <g>
+                        <div class="advantages__item">
+                            <div class="advantages__item-img">
+                                <svg viewBox="0 0 412.735 412.735" style="enable-background:new 0 0 412.735 412.735;"
+                                    xml:space="preserve">
                                     <g>
-                                        <path d="M295.706,35.522C295.706,35.522,295.706,35.522,295.706,35.522c-34.43-0.184-67.161,14.937-89.339,41.273
+                                        <g>
+                                            <path d="M295.706,35.522C295.706,35.522,295.706,35.522,295.706,35.522c-34.43-0.184-67.161,14.937-89.339,41.273
                                    c-22.039-26.516-54.861-41.68-89.339-41.273C52.395,35.522,0,87.917,0,152.55C0,263.31,193.306,371.456,201.143,375.636
                                    c3.162,2.113,7.286,2.113,10.449,0c7.837-4.18,201.143-110.759,201.143-223.086C412.735,87.917,360.339,35.522,295.706,35.522z
                                     M206.367,354.738C176.065,336.975,20.898,242.412,20.898,152.55c0-53.091,43.039-96.131,96.131-96.131
                                    c32.512-0.427,62.938,15.972,80.457,43.363c3.557,4.905,10.418,5.998,15.323,2.44c0.937-0.68,1.761-1.503,2.44-2.44
                                    c29.055-44.435,88.631-56.903,133.066-27.848c27.202,17.787,43.575,48.114,43.521,80.615
                                    C391.837,243.456,236.669,337.497,206.367,354.738z" />
+                                        </g>
                                     </g>
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="advantages__item-title">
-                            100% Secure Payment
-                        </div>
-                        <div class="advantages__item-text">
-                            Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has been
-                            the industry's standaum.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="author" style="background-image: url(img/author_bg.jpg);">
-        <div class="container">
-            <div class="author__box">
-                <div class="author__title">
-                    Over <span>20,000</span> Author
-                    Are Involved Here!
-                </div>
-                <a class="author__link" href="#">Become A Author</a>
-            </div>
-        </div>
-    </section>
-    <section class="tutorial">
-        <div class="container">
-            <div class="tutorial__inner">
-                <div class="tutorial__title title">
-                    Free Monthly Tutorials To Help You With Your Project
-                </div>
-                <div class="wrapper">
-                    <div class="wrapper__item">
-                        <div class="wrapper__item-img" style="background-image: url(img/tutorial/1.jpg);"></div>
-                        <div class="wrapper__item-title">Web Design Tutorials</div>
-                    </div>
-                    <div class="wrapper__item">
-                        <div class="wrapper__item-img" style="background-image: url(img/tutorial/2.jpg);"></div>
-                        <div class="wrapper__item-title">WordPress Tutorials</div>
-                    </div>
-                    <div class="wrapper__item">
-                        <div class="wrapper__item-img" style="background-image: url(img/tutorial/3.jpg);"></div>
-                        <div class="wrapper__item-title">HTML & CSS Tutorials</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="footer">
-        <div class="footer__content">
-            <div class="container">
-                <div class="footer__inner">
-                    <div class="footer__col">
-                        <div class="footer__col-title">
-                            About Company
-                        </div>
-                        <div class="footer__col-text">
-                            Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce sit
-                            amet urna iat.Praesent vel rutrum purus.
-                        </div>
-                        <div class="footer__info">
-                            PO Box 16122 Collins Street West
-                            Victoria 8007 Australia
-                        </div>
-                        <a class="footer__info footer__info-tel" href="tel:61383766284">+61 3 8376 6284</a>
-                    </div>
-
-
-                    <div class="footer__col footer__col-menu">
-                        <div class="footer__col-title">
-                            Join Our Community
-                        </div>
-                        <ul class="footer__col-list">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Forums</a></li>
-                            <li><a href="#">Become an Author</a></li>
-                            <li><a href="#">Community Meetups</a></li>
-                            <li><a href="#">Become an Affiliate</a></li>
-                        </ul>
-                    </div>
-
-
-                    <div class="footer__col footer__col-menu">
-                        <div class="footer__col-title">
-                            Need Help?
-                        </div>
-                        <ul class="footer__col-list">
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Foxtar Market Terms</a></li>
-                            <li><a href="#">Author Terms</a></li>
-                            <li><a href="#">Foxtar Licenses</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer__col">
-                        <div class="footer__col-title">
-                            Follow Us On
-                        </div>
-                        <ul class="footer__social-link">
-                            <li><a class="link-facebook" href="#"></a></li>
-                            <li><a class="link-twitter" href="#"></a></li>
-                            <li><a class="link-youtube" href="#"></a></li>
-                            <li><a class="link-pinterest" href="#"></a></li>
-                            <li><a class="link-linkedin" href="#"></a></li>
-                        </ul>
-                        <div class="footer__form">
-                            <div class="footer__form-title">
-                                Newsletter Sign Up!
+                                </svg>
                             </div>
-                            <form>
-                                <input type="text" placeholder="E-mail Address">
-                                <button type="submit"></button>
-                            </form>
+                            <div class="advantages__item-title">
+                                100% Secure Payment
+                            </div>
+                            <div class="advantages__item-text">
+                                Dorem Ipsum is simply dummy text of the pring and typesetting industry. Lorem Ipsum has
+                                been
+                                the industry's standaum.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer__copy">
+        </section>
+        <section class="author" style="background-image: url(img/author_bg.jpg);">
             <div class="container">
-                <div class="footer__copy-text">
-                    © 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
+                <div class="author__box">
+                    <div class="author__title">
+                        Over <span>20,000</span> Author
+                        Are Involved Here!
+                    </div>
+                    <a class="author__link" href="#">Become A Author</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="tutorial">
+            <div class="container">
+                <div class="tutorial__inner">
+                    <div class="tutorial__title title">
+                        Free Monthly Tutorials To Help You With Your Project
+                    </div>
+                    <div class="inner">
+                        <div class="inner__item">
+                            <div class="inner__item-img" style="background-image: url(img/tutorial/1.jpg);"></div>
+                            <div class="inner__item-title">Web Design Tutorials</div>
+                        </div>
+                        <div class="inner__item">
+                            <div class="inner__item-img" style="background-image: url(img/tutorial/2.jpg);"></div>
+                            <div class="inner__item-title">WordPress Tutorials</div>
+                        </div>
+                        <div class="inner__item">
+                            <div class="inner__item-img" style="background-image: url(img/tutorial/3.jpg);"></div>
+                            <div class="inner__item-title">HTML & CSS Tutorials</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer__content">
+                <div class="container">
+                    <div class="footer__inner">
+                        <div class="footer__col">
+                            <div class="footer__col-title">
+                                About Company
+                            </div>
+                            <div class="footer__col-text">
+                                Praesent vel rutrum purus. Nam vel dui eu risus duis dignissim digniSuspen disse.Fusce
+                                sit
+                                amet urna iat.Praesent vel rutrum purus.
+                            </div>
+                            <div class="footer__info">
+                                PO Box 16122 Collins Street West
+                                Victoria 8007 Australia
+                            </div>
+                            <a class="footer__info footer__info-tel" href="tel:61383766284">+61 3 8376 6284</a>
+                        </div>
 
+
+                        <div class="footer__col footer__col-menu">
+                            <div class="footer__col-title">
+                                Join Our Community
+                            </div>
+                            <ul class="footer__col-list">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Forums</a></li>
+                                <li><a href="#">Become an Author</a></li>
+                                <li><a href="#">Community Meetups</a></li>
+                                <li><a href="#">Become an Affiliate</a></li>
+                            </ul>
+                        </div>
+
+
+                        <div class="footer__col footer__col-menu">
+                            <div class="footer__col-title">
+                                Need Help?
+                            </div>
+                            <ul class="footer__col-list">
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Foxtar Market Terms</a></li>
+                                <li><a href="#">Author Terms</a></li>
+                                <li><a href="#">Foxtar Licenses</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer__col">
+                            <div class="footer__col-title">
+                                Follow Us On
+                            </div>
+                            <ul class="footer__social-link">
+                                <li><a class="link-facebook" href="#"></a></li>
+                                <li><a class="link-twitter" href="#"></a></li>
+                                <li><a class="link-youtube" href="#"></a></li>
+                                <li><a class="link-pinterest" href="#"></a></li>
+                                <li><a class="link-linkedin" href="#"></a></li>
+                            </ul>
+                            <div class="footer__form">
+                                <div class="footer__form-title">
+                                    Newsletter Sign Up!
+                                </div>
+                                <form>
+                                    <input type="text" placeholder="E-mail Address">
+                                    <button type="submit"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copy">
+                <div class="container">
+                    <div class="footer__copy-text">
+                        © 2017 Foxtar market place. Trademarks and brands are the property of their respective owners.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
