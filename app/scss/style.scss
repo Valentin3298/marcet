@@ -781,6 +781,7 @@
   margin-bottom: 30px;
   height: 60px;
   button {
+    padding: 0 5px;
     background: transparent;
     color: #707070;
     &.active {
@@ -814,6 +815,7 @@
     flex-wrap: wrap;
   }
   .products__item {
+    transition: all 0.3s;
     box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
     background-color: #ffffff;
     max-width: 270px;
@@ -859,6 +861,90 @@
           color: #fff;
         }
       }
+    }
+  }
+}
+.product__item-text {
+  display: none;
+}
+.products__item-price {
+  span {
+    display: none;
+  }
+}
+.products__item-list {
+  display: none;
+  .icon-comment-o,
+  .icon-heart-o {
+    display: inline-block;
+    color: #b0bec5;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 50px;
+    border-left: 2px solid #aeb4bb;
+    position: relative;
+    span {
+      color: #263238;
+    }
+    &::before {
+      position: absolute;
+      font-size: 16px;
+      color: $color-green;
+      left: 20px;
+      top: 0;
+    }
+  }
+  .icon-comment-o {
+    padding-right: 30px;
+    &::before {
+      top: -2px;
+    }
+  }
+}
+.products__item {
+  &.list {
+    max-width: 100%;
+    .products__item-name {
+      max-width: 480px;
+    }
+    .products__item-img {
+      min-height: 100%;
+      width: 240px;
+      float: left;
+    }
+    .product__item-text {
+      display: block;
+      color: #70838d;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 5px;
+    }
+    .products__item-category {
+      margin-bottom: 20px;
+    }
+    .products__item-price {
+      text-align: end;
+      font-size: 30px;
+      span {
+        display: block;
+        color: #aeb4bb;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 22px;
+      }
+    }
+    .products__item-content {
+      padding: 26px 30px 15px 35px;
+    }
+    .products__item-list {
+      display: block;
+    }
+    .products__item-star {
+      margin-left: auto;
+      margin-right: 30px;
     }
   }
 }
