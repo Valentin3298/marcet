@@ -116,7 +116,7 @@ body {
     padding: 0 15px;
   }
 }
-.page-content{
+.page-content {
   background-color: #f4f6f5;
 }
 .title {
@@ -157,5 +157,17 @@ body {
     a {
       color: #b0bec5;
     }
+  }
+}
+.angle-right {
+  position: relative;
+  padding-left: 15px;
+  &::before {
+    content: "\f105";
+    font-family: "icomoon";
+    position: absolute;
+    left: 0;
+    color: $color-green;
+    font-size: 14px;
   }
 }
