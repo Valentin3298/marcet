@@ -24,6 +24,13 @@ $(function () {
     prefix: "$",
   });
 
+  $(".menu__btn").on("click", function () {
+    $(".menu__list").slideToggle();
+  });
+  $(".header__btn-menu ").on("click", function () {
+    $(".header__box").toggleClass("active");
+  });
+
   $(".icon-th-list").on("click", function () {
     $(".products__item").addClass("list");
     $(".icon-th-list").addClass("active");

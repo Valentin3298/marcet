@@ -98,6 +98,7 @@
   }
 }
 .basket {
+  margin-right: 20px;
   span {
     background-color: #95c85a;
   }
@@ -108,7 +109,6 @@
 }
 .user {
   position: relative;
-  margin-left: 20px;
   margin-right: 25px;
   padding-right: 20px;
   &::before {
@@ -199,6 +199,7 @@
   overflow: hidden;
   height: 0px;
   transition: all 0.3s;
+  z-index: 1;
 }
 .basket__box,
 .notification__box,
@@ -319,6 +320,10 @@
   .circle__info-thema {
     margin-bottom: 9px;
   }
+}
+.header__btn-menu,
+.menu__btn {
+  display: none;
 }
 // ========================= end header ===========================================================================
 
@@ -1212,3 +1217,5 @@
   }
 }
 // ========================= end product-page ======================================================================================
+
+@import "media";
