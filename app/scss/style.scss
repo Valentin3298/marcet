@@ -1218,4 +1218,201 @@
 }
 // ========================= end product-page ======================================================================================
 
+// ========================= start product-one ======================================================================================
+.product-one {
+  padding-bottom: 100px;
+}
+.product-one__content {
+  margin-right: 31px;
+  max-width: 870px;
+}
+.product-one__inner {
+  display: flex;
+}
+.product-one__img-inner {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #d7d7d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 55px;
+}
+.product-one__img {
+  max-width: 829px;
+  width: 100%;
+  min-height: 422px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.product-one__title {
+  margin-bottom: 25px;
+  color: #263238;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+}
+.product-one__text {
+  margin-bottom: 45px;
+  color: #707070;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.product-one__box {
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: space-between;
+}
+.product-one__link {
+  a {
+    padding: 20px 25px;
+    color: #f4f6f5;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    & + a {
+      margin-left: 20px;
+    }
+  }
+  .link-live {
+    background-color: #e74c3c;
+  }
+  .link-screen {
+    background-color: #455a64;
+  }
+  .link-doc {
+    background-color: #8bc34a;
+  }
+}
+.product-one__social {
+  a {
+    position: relative;
+    width: 54px;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .icon-facebook {
+    background-color: #6370b6;
+  }
+  .icon-twitter {
+    background-color: #64b5f6;
+  }
+  .icon-linkedin {
+    background-color: #4f71ce;
+  }
+  .icon-pinterest-p {
+    background-color: #d32f2f;
+  }
+}
+.product-one__more {
+  padding: 20px 30px;
+  color: #263238;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #f4f6f5;
+  border: 1px solid #d7d7d7;
+  margin-bottom: 28px;
+}
+
+.product-one__more-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.productmini {
+  margin-bottom: 28px;
+  max-width: 270px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+  background-color: #f4f6f5;
+}
+.productmini__img {
+  margin-right: 20px;
+  width: 100px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.productmini__name {
+  margin-bottom: 11px;
+  color: #263238;
+  font-family: "Roboto-Medium", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.productmini__thema {
+  margin-bottom: 9px;
+  color: #8bc34a;
+  font-family: "Roboto-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+.productmini__price {
+  color: #263238;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.product-one__more {
+  margin-top: 55px;
+}
+.tabs {
+  display: flex;
+  text-align: center;
+  background-color: #f4f6f5;
+  border: 1px solid #222222;
+  .tab {
+    color: #263238;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0;
+    width: 100%;
+    cursor: pointer;
+    & + .tab {
+      border-left: 1px solid #222;
+    }
+  }
+}
+.tab_content {
+  background-color: #f4f6f5;
+  border: 1px solid #222222;
+  border-top: none;
+  padding: 30px 30px 50px;
+}
+.tab-item {
+  display: none;
+  &:first-child {
+    display: block;
+  }
+}
+.tab-items__list {
+  column-count: 2;
+  column-gap: 25px;
+  li {
+    color: #707070;
+    font-family: "Roboto_Regular", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+}
+
+// ========================= end product-one ======================================================================================
+
 @import "media";
