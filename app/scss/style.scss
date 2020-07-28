@@ -1668,13 +1668,15 @@ label {
 
 // ========================= start page-404 ======================================================================================
 .page-404__wrapper,
-.about__wrapper {
+.about__wrapper,
+.contact__wrapper {
   border: 1px solid #d7d7d7;
   background-color: #ffffff;
   margin-bottom: 150px;
 }
 .page-404__head,
-.about__head {
+.about__head,
+.contact__head {
   color: #444444;
   font-family: "Roboto-Medium", sans-serif;
   font-size: 24px;
@@ -1742,7 +1744,6 @@ label {
 .about__inner {
   padding: 0 50px;
   .about__box {
-  
     h3 {
       color: #444444;
       font-family: "Roboto-Bold", sans-serif;
@@ -1762,5 +1763,119 @@ label {
   }
 }
 // ========================= end about ======================================================================================
+
+// ========================= start contacts ======================================================================================
+.contact__head {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.contact__inner {
+  padding: 35px 40px 15px;
+}
+.contact__map {
+  margin-bottom: 60px;
+  iframe {
+    width: 100%;
+    min-height: 415px;
+  }
+}
+.contact__box {
+  display: flex;
+  .contact__info {
+    max-width: 330px;
+    width: 100%;
+    margin-right: 30px;
+  }
+  .contact__info-item {
+    margin-bottom: 30px;
+    .contact__info-title {
+      color: #263238;
+      font-family: "Roboto-Medium", sans-serif !important;
+      font-size: 20px;
+      font-weight: 500;
+      padding-left: 40px;
+      position: relative;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+      &::before {
+        font-family: "icomoon";
+        position: absolute;
+        left: 0;
+        color: #8bc34a;
+        font-size: 24px;
+        font-weight: 400;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 40px;
+        width: 44px;
+        height: 4px;
+        background-color: #8bc34a;
+        bottom: 0;
+      }
+    }
+    .contact__info-content {
+      color: #707070;
+      font-family: "Roboto-Regular", sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+      padding-left: 40px;
+      max-width: 230px;
+      width: 100%;
+    }
+  }
+  .contact__form{
+    width: 100%;
+  }
+  .contact__form-title {
+    color: #333333;
+    font-family: "Roboto-Medium", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 23px;
+  }
+  .contact__form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    input {
+      width: 351px;
+      height: 43px;
+      background-color: #f1f4f5;
+      padding: 0 17px;
+      &::placeholder {
+        color: #7a7a7a;
+        font-size: 15px;
+      }
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 193px;
+    background-color: #f1f4f5;
+    padding: 16px 17px;
+    resize: none;
+    margin-bottom: 22px;
+    &::placeholder {
+      color: #7a7a7a;
+      font-size: 15px;
+    }
+  }
+  button {
+    max-width: 190px;
+    width: 100%;
+    min-height: 54px;
+    padding:0 10px;
+    background-color: #8bc34a;
+    color: #ffffff;
+    font-family: "Roboto-Bold", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
+// ========================= end contacts ======================================================================================
 
 @import "media";
